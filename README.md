@@ -1,35 +1,20 @@
-![AIDevLog](https://repository-images.githubusercontent.com/191505403/6a63bc80-8d1d-11e9-8bd7-44aaa16ccdb9)
+![wmbook](https://repository-images.githubusercontent.com/191505403/6a63bc80-8d1d-11e9-8bd7-44aaa16ccdb9)
 
-[![Build Status](https://travis-ci.org/iOSDevLog/aidevlog.svg?branch=master)](https://travis-ci.org/iOSDevLog/aidevlog)
-![PyPI - Python Version](https://img.shields.io/pypi/pyversions/aidevlog.svg)
-![PyPI](https://img.shields.io/pypi/v/aidevlog.svg)
-![PyPI - License](https://img.shields.io/pypi/l/aidevlog.svg)
-![PyPI - Wheel](https://img.shields.io/pypi/wheel/aidevlog.svg)
-![PyPI - Downloads](https://img.shields.io/pypi/dm/aidevlog.svg)
+[![Build Status](https://travis-ci.org/iOSDevLog/wmbook.svg?branch=master)](https://travis-ci.org/iOSDevLog/wmbook)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/wmbook.svg)
+![PyPI](https://img.shields.io/pypi/v/wmbook.svg)
+![PyPI - License](https://img.shields.io/pypi/l/wmbook.svg)
+![PyPI - Wheel](https://img.shields.io/pypi/wheel/wmbook.svg)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/wmbook.svg)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-[![Twitter](https://img.shields.io/twitter/url/https/github.com/iOSDevLog/aidevlog.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2FiOSDevLog%2Faidevlog)
+[![Twitter](https://img.shields.io/twitter/url/https/github.com/iOSDevLog/wmbook.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2FiOSDevLog%2Fwmbook)
 
-# templete
+# wmbook
 
-templete of AIDevLog
+Machine Learning (Watermelon Book) 机器学习（西瓜书）
 
-## 需要修改
-
-`.travis.yml`
-
-```sh
-gem sources --add https://gems.ruby-china.com/ --remove https://rubygems.org/
-gem sources -l
-[sudo] gem install travis
-travis login
-travis encrypt <PyPI password> --add deploy.password
-```
-
-### 关于转义某些符号的注意事项
-
-请注意，如果您的 PyPI 密码包含特殊字符，则需要在加密密码之前将其转义。
-
-[https://2019.iosdevlog.com/2019/06/05/travis/](https://2019.iosdevlog.com/2019/06/05/travis/])
+GitHub: [https://github.com/iOSDevLog/wmbook](https://github.com/iOSDevLog/wmbook)
+PyPI: [https://travis-ci.org/iOSDevLog/wmbook](https://travis-ci.org/iOSDevLog/wmbook)
 
 ## 代码规范
 
@@ -37,7 +22,7 @@ travis encrypt <PyPI password> --add deploy.password
 
 ```json
 {
-  "python.pythonPath": "/Users/iosdevlog/.Envs/aidevlog/bin/python",
+  "python.pythonPath": "/Users/iosdevlog/.Envs/wmbook/bin/python",
   "python.linting.flake8Enabled": true,
   "python.formatting.provider": "yapf",
   "python.linting.flake8Args": ["--max-line-length=248"],
@@ -50,7 +35,7 @@ travis encrypt <PyPI password> --add deploy.password
 ## 安装
 
 ```sh
-pip install aidevlog
+pip install wmbook
 ```
 
 ## 开发
@@ -87,8 +72,8 @@ npm install -g conventional-changelog-cli
 
 微信公众号: AI 开发日志
 
-![AIDevLog](https://2019.iosdevlog.com/uploads/AIDevLog.jpg)
+![wmbook](https://2019.iosdevlog.com/uploads/wmbook.jpg)
 
 ## License
 
-AIDevLog is released under the MIT license. See [LICENSE](LICENSE) for details.
+wmbook is released under the MIT license. See [LICENSE](LICENSE) for details.

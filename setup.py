@@ -4,8 +4,8 @@ import setuptools
 import builtins
 from os import path
 
-# 导入一个不需要编译代码的受限版本的 aidevlog
-import aidevlog
+# 导入一个不需要编译代码的受限版本的 wmbook
+import wmbook
 
 # 可以检测到它是否被安装程序加载, 以避免尝试加载尚未生成的组件
 builtins.__SKLEARN_SETUP__ = True
@@ -24,20 +24,20 @@ SCIPY_MIN_VERSION = "1.3"
 NUMPY_MIN_VERSION = "1.16"
 JOBLIB_MIN_VERSION = "0.13"
 
-DISTNAME = "aidevlog"
-VERSION = aidevlog.__version__
-DESCRIPTION = "Templete of AIDevLog"
+DISTNAME = "wmbook"
+VERSION = wmbook.__version__
+DESCRIPTION = "Templete of wmbook"
 with open("README.md", encoding="utf-8") as f:
     LONG_DESCRIPTION = f.read()
-URL = "https://github.com/iOSDevLog/aidevlog"
+URL = "https://github.com/iOSDevLog/wmbook"
 AUTHOR = "Xianhua Jia"
 AUTHOR_EMAIL = "iosdevlog@iosdevlog.com"
-DOWNLOAD_URL = "https://pypi.org/project/aidevlog/#files"
+DOWNLOAD_URL = "https://pypi.org/project/wmbook/#files"
 LICENSE = "MIT"
 PROJECT_URLS = {
-    "Bug Tracker": "https://github.com/iOSDevLog/aidevlog/issues",
-    "Documentation": "https://github.com/iOSDevLog/aidevlog",
-    "Source Code": "https://github.com/iOSDevLog/aidevlog"
+    "Bug Tracker": "https://github.com/iOSDevLog/wmbook/issues",
+    "Documentation": "https://github.com/iOSDevLog/wmbook",
+    "Source Code": "https://github.com/iOSDevLog/wmbook"
 }
 
 setuptools.setup(

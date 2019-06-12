@@ -43,7 +43,7 @@ def _get_deps_info():
         "pandas",
         "matplotlib",
         "sklearn",
-        "aidevlog",
+        "wmbook",
     ]
 
     def get_version(module):
