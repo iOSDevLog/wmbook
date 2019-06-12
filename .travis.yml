@@ -1,0 +1,21 @@
+dist: xenial
+language: python
+python:
+- '3.5'
+- '3.6'
+- '3.7'
+install:
+- pip install -r requirements.txt
+script:
+- pytest
+deploy:
+  provider: pypi
+  user: iosdevlog
+  on:
+    python: 3.7
+    tags: true
+    branch: master
+  distributions: sdist bdist_wheel
+  skip_cleanup: true
+  password:
+    secure: oKfU8PBVpnek5D3yPF9Z46SJwQZrqEQyi7omRq3V46/jFr2IdRQn5/F2TFljD5y9w/r/8BtpTewvu3V8eeY7bHT3qUIjfNGHnkCEB5AFaITBborJ6t8eCHu91+TdHFx3IH3OH9/elTz9ijx38AurlCN5MAQWX3KobP4u8popyNLAybQO2yCGw3eGuOONZuGQz8PMBXmit5Ug11hmCtsURdhRs4sjKsj5wb4j2SYrXIyKfD+i7Sc6teuzcky4EVPbFr0M8JHQVdh57XqA8qABWN9UhGPs8ZZQc8wSYPJBdw3GK82qUqulMbxE5ydnuP/0PwnIkHgcyy17l1TDGKNu21DVKoe79UA/2z+UUfuDoBeoaOzHwSqAJW/DTMPVSN+CtMg6uHsj3AjzEDgeaLLH/ArR03Iq9DMP/Oy1EfC2LxwT675aJ5BjL39rdT3cuBVNuHTzLC32+o3xIpIPnl0+hOuhwM8Kh9QvjcjPYGsiSoIN6krY4f8RCLjcSyosONoih9FRGdTQLu6yXGsnAgcgT26Lf/1cEs2++00nu+HmxwbMsGrBMJXyTvSfRkkFCZuJbKxVwpRaZiO2azWTKuzEl49BhpTyQHnAjrqiz8Ac60C+vANIFiE3sjbCuTNkYPkH0Kzb+oG7h4wvbDPwZlZ6lx3lyRmbpgmSkVIzUutVmOY=
